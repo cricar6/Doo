@@ -1,0 +1,45 @@
+$quick: 'Quicksand',
+sans-serif;
+$shadow-preset: 0px 0px 30px 7px rgba(0, 0, 0, 0.05);
+
+.group {
+    width: 200px;
+    height: 250px;
+    border-radius: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+    font-family:  $quick;
+    font-weight: 700;
+    position: relative;
+    background: #2C3460;
+    color: white;
+    box-shadow: $shadow-preset;
+
+    .members {
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin: 10px;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+    }
+    
+    .name {
+        width: 200px;
+        border-radius: 0 0 20px 20px;
+        background:  #1B408E;
+        box-sizing: border-box;
+        padding: 10px;
+        box-shadow: $shadow-preset;
+        p {
+            min-height: 30px;
+            color: white;
+        }
+    }
+}
+

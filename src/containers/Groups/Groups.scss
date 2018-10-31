@@ -1,0 +1,75 @@
+$quick: 'Quicksand',
+sans-serif;
+$shadow-preset: 0px 0px 30px 7px rgba(0, 0, 0, 0.05);
+$gray : #ccc;
+
+a {
+    text-decoration: none;
+}
+
+.groupsContainer {
+    padding-top: 50px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: stretch;
+    align-items: flex-start;
+}
+.group {
+    margin: 20px;
+}
+.gEmpty {
+    width: 200px;
+    height: 250px;
+    border-radius: 20px;
+    background: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+    font-family:  $quick;
+    font-weight: 700;
+    position: relative;
+    border: $gray 2px dotted;
+    color: $gray;
+    stroke-dasharray: 10px;
+
+    .supbar {
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin: 10px;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        border: $gray 2px dotted;
+    }
+    
+    .nContent {
+        width: 100%;
+        min-height: 30px;
+        border-radius: 0 0 20px 20px;
+        border-top: $gray 2px dotted;
+
+    }
+}
+.gEmpty {
+
+    
+    .nState {
+        padding: 50px;
+        span {
+            font-size: 30pt;
+            color: $gray;
+        }
+        p {
+            font-size: 12pt;
+            width: 100px;
+            color: $gray;
+        }
+    }
+
+}

@@ -1,0 +1,64 @@
+$quick: 'Quicksand',
+sans-serif;
+$shadow-preset: 0px 0px 30px 7px rgba(0, 0, 0, 0.05);
+$blue: #1B408E;
+$violet : #C83D78;
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.item {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    background: #fff;
+    box-shadow: $shadow-preset;
+    animation: opacityEffect 1s ease-out forwards;
+}
+
+.chart-text {
+    font: 16px/1.4em $quick;
+    fill: #ccc;
+    transform: translateY(0.25em);
+    font-weight: 700;
+}
+
+.chart-number {
+    font-size: 0.85em;
+    line-height: 1;
+    text-anchor: middle;
+    transform: translateY(-0.10em);
+    fill: $blue;
+    letter-spacing: -1px;
+    tspan {
+        fill: #ccc;
+        font-size: 0.45em;
+    }
+}
+
+.chart-label {
+    font-size: 0.15em;
+    text-anchor: middle;
+    transform: translateY(0.3em);
+    font-weight: 700;
+}
+
+.donut-segment {
+    animation: bar 1s ease-out forwards;
+}
+
+@keyframes bar {
+    from {
+        opacity: 0;
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes opacityEffect {
+    from {
+        opacity: 0;
+    }
+}
+

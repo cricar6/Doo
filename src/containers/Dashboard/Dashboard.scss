@@ -1,0 +1,40 @@
+
+.dashboard {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 95vw;
+    height: 95vh;
+
+    margin: 20px;
+    box-sizing: border-box;
+    .first {
+        height: 100vh;
+        width: 30vw;
+        margin: 0 10px 0 0;
+
+    }
+    .second {
+        height: 100vh;
+        width: 60vw;
+        box-sizing: border-box;
+        display: column;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 0 10px 0 10px;
+        .firstRow {
+            height: 50vh;
+        }
+        .secondRow {
+            height: 50vh;
+
+        }
+    }
+    .third {
+        height: 100vh;
+        width: 30vw;
+        margin: 0 0 0 10px;
+        box-sizing: border-box;
+
+    }
+}

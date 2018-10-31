@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700');
+
+$quick: 'Quicksand',
+sans-serif;
+$shadow-preset: 0px 0px 30px 7px rgba(0, 0, 0, 0.05);
+$radius-preset: 20px;
+$blue: #1B408E;
+$violet : #C83D78;
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.item {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: #fff;
+    box-shadow: $shadow-preset;
+    animation: opacityEffect 1s ease-out forwards;
+}
+
+.chart-text {
+    font: 16px/1.4em $quick;
+    fill: #ccc;
+    transform: translateY(0.25em);
+    font-weight: 700;
+}
+
+.chart-number {
+    font-size: 0.85em;
+    line-height: 1;
+    text-anchor: middle;
+    transform: translateY(-0.10em);
+    fill: $blue;
+    letter-spacing: -1px;
+    tspan {
+        fill: #ccc;
+        font-size: 0.45em;
+    }
+}
+
+.chart-label {
+    font-size: 0.15em;
+    text-anchor: middle;
+    transform: translateY(0.3em);
+    font-weight: 700;
+}
+
+.donut-segment {
+    animation: bar 1s ease-out forwards;
+}
+
+@keyframes bar {
+    from {
+        opacity: 0;
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes opacityEffect {
+    from {
+        opacity: 0;
+    }
+}
+
+
+.generalContainer {
+    width: 100%;
+    height: 100%;
+    
+    position: relative;
+    margin-top: 70px;;
+    box-sizing: border-box;
+    color: white;
+    box-shadow: $shadow-preset;
+    border-radius: $radius-preset;
+    .container {
+        border-radius: $radius-preset;
+        width: 100%;
+        position: relative;
+        .supbar {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 30px;
+        }
+        .daysLeft {
+            padding-top: 40px;
+            margin: 0 auto;
+            width: 180px;
+            .item2 {
+                .chart-number {
+                    fill: white;
+                }
+                .chart-label {
+                    fill: white;
+                    font-size: 0.22em;
+                }
+            }
+        }
+        .teamMembers {
+            margin-top: -40px;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            .member {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                width: 80px;
+                color: $blue;
+                text-align: center;
+                font-family: $quick;
+                .avaContainer {
+                    background: white;
+                    box-shadow: $shadow-preset;
+                    border-radius: 50%;
+                    .avatar {
+                        padding: 10px;
+                    }
+                }
+
+            }
+            .primary {
+                font-weight: bold;
+                color: $blue;
+            }
+            .secondary {
+                
+                width: 60px;
+                padding: 5px;
+                color: #aaa;
+                font-size: 0.8em;
+            }
+        }
+        .generalInfo {
+            width: 100%;
+            color: $blue;
+            font-weight: 700;
+            font-family: $quick;
+            text-align: center;
+            padding: 5%;
+            box-sizing: border-box;
+            .title {
+                font-size: 1.2em;
+                margin-bottom: 20px;
+            }
+            .description {
+            }
+        }
+    }
+    .background {
+        width: 100%;
+        height: auto;
+        position: absolute;
+        top: 0;
+        z-index: -1;
+        svg {
+            border-radius: $radius-preset $radius-preset 0 0;
+        }
+    }
+}

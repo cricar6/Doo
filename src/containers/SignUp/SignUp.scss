@@ -1,0 +1,119 @@
+$quick: 'Quicksand',
+sans-serif;
+$shadow-preset: 0px 0px 30px 7px rgba(0, 0, 0, 0.05);
+$blue: #1B408E;
+$violet: #C83D78;
+$black: #3b3c40;
+$cyan: #79bbc1;
+$gray: #aaa;
+
+
+$checkSize: 25px;
+$radius-preset: 20px;
+
+.panda0 {fill: #FFFFFF; stroke: $cyan;}
+.panda1 {fill: $cyan;}
+.panda2 {fill: none; stroke: $cyan;}
+.panda3 {fill: #FFFFFF;}
+
+.gorilla0 {fill: $cyan;}
+.gorilla1 {fill: #FFFFFF; stroke: $cyan;}
+.gorilla2 {fill: none; stroke: $cyan;}
+.gorilla3 {fill: #FFFFFF;}
+
+.penguin0 {fill: $cyan;}
+.penguin1 {fill: #FFFFFF; stroke: $cyan;}
+.penguin2 {fill: none; stroke: $cyan;}
+.penguin3 {fill: #FFFFFF;}
+
+.bunny0 {fill: #FFFFFF; stroke: $cyan;}
+.bunny1 {fill: $cyan;}
+.bunny2 {fill: none; stroke: $cyan;}
+.bunny3 {fill: $cyan;}
+.bunny4 {fill: #FFFFFF;}
+
+section {
+    .cCont {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        h2 {
+            color: $gray;
+            margin-bottom: 20px;
+        }
+        .container {
+            max-width: 400px;
+            border-radius: $radius-preset;
+            padding: 20px;
+            box-shadow: $shadow-preset;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            .avatares {
+                width: 100%;
+                display: flex;
+                justify-content: space-around;
+                .avatar {
+                    height: 50px;
+                    width: 50px;
+                    cursor: pointer;
+                    transition: all .2s ease-out;
+                    &:hover {
+                        transform: translateY(2px);
+                        filter: hue-rotate(75deg);
+                    }
+                    &:focus {
+                        outline: none;
+                        transform: translateY(2px);
+                        filter: hue-rotate(75deg);
+                    }
+                }
+            }
+            form {
+                padding: 20px;
+                display: flex;
+                flex-direction: column;
+                input {
+                    margin: 5px 0;
+                    background: transparent;
+                    border: none;
+                    border-bottom: $blue 2px solid;
+                    font-size: 1.1em;
+                    font-weight: bold;
+                    color: $blue;
+                    &:focus {
+                        outline: none;
+                    }
+                }
+                button {
+                    width: 150px;
+                    height: 40px;
+                    margin: 20px auto;
+                    border-radius: 50px;
+                    box-shadow: $shadow-preset;
+                    background: $violet;
+                    border: none;
+                    color: white;
+                    font-weight: 700;
+                    text-transform: uppercase;
+                    letter-spacing: 3px;
+                    transition: all .2s ease-out;
+                    cursor: pointer;
+                    &:hover {
+                        transform: translateY(2px);
+                    }
+                    &:focus {
+                        outline: none;
+                    }
+                }
+            }
+            p{
+                color: $gray;
+                text-align: center;
+            }
+        }
+    }
+}

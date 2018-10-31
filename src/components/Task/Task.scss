@@ -1,0 +1,54 @@
+$quick: 'Quicksand',
+sans-serif;
+$shadow-preset: 0px 0px 30px 7px rgba(0, 0, 0, 0.05);
+$blue: #1B408E;
+$violet : #C83D78;
+$black: #3b3c40;
+$cyan: #79bbc1;
+$checkSize : 30px;
+
+* {
+    padding: 0;
+    margin: 0;
+    color: $black; 
+
+}
+.task {
+    height: $checkSize;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin: 15px 0;
+
+   
+    .checkBox {
+        padding: 0;
+        background: transparent;
+        border: none;
+        margin-right: 20px;
+        div {
+            height: $checkSize;
+            width: $checkSize;
+            background: $cyan;
+            border-radius: $checkSize;
+        }
+    }
+    .taskInfo {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        span {
+            font-weight: 700;
+            font-size: 20px;
+        }
+        .members {
+            .member {
+                width: 20px;
+                height: 20px;
+            }
+        }
+    }
+
+}

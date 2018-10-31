@@ -1,0 +1,84 @@
+$quick: 'Quicksand',
+sans-serif;
+$shadow-preset: 0px 0px 30px 7px rgba(0, 0, 0, 0.05);
+$blue: #1B408E;
+$violet: #C83D78;
+$black: #3b3c40;
+$cyan: #79bbc1;
+$checkSize: 25px;
+$radius-preset: 20px;
+.cPopUp {
+    background: rgba($blue, $alpha: 0.8);
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .popContainer {
+        max-width: 400px;
+        padding: 20px;
+        margin: 20px;
+        border-radius: $radius-preset;
+        box-shadow: $shadow-preset;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background: white;
+        h3 {
+            color: $violet;
+            font-size: 1.4em;
+            text-align: center;
+            margin: 20px 0;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            input {
+                margin: 5px 0;
+                border: none;
+                border-bottom: $blue 2px solid;
+                background: transparent;
+                font-size: 1.1em;
+                font-weight: bold;
+                color: $blue;
+                &:focus {
+                    outline: none;
+                }
+            }
+            textarea {
+                font-size: 1.1em;
+                font-weight: bold;
+                color: $blue;
+                border: none;
+                border-bottom: #1B408E 2px solid;
+                margin: 20px 0px;
+            }
+            button {
+                width: 150px;
+                height: 40px;
+                margin: 20px auto;
+                background: $blue;
+                border-radius: 50px;
+                box-shadow: $shadow-preset;
+                border: none;
+                color: white;
+                font-weight: 700;
+                text-transform: uppercase;
+                letter-spacing: 3px;
+                transition: all .2s ease-out;
+                cursor: pointer;
+                &:hover {
+                    transform: translateY(2px);
+                }
+                &:focus {
+                    outline: none;
+                }
+            }
+        }
+
+    }
+}

@@ -1,0 +1,57 @@
+$quick: 'Quicksand',
+sans-serif;
+$shadow-preset: 0px 0px 30px 7px rgba(0, 0, 0, 0.05);
+$blue: #1B408E;
+$violet: #C83D78;
+$black: #3b3c40;
+$cyan: #79bbc1;
+$checkSize: 25px;
+$radius-preset: 20px;
+
+.addTask {
+
+    form {
+        margin-top: -20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+    input {
+        margin: 5px 0;
+        border: none;
+        border-bottom: $blue 2px solid;
+        background: transparent;
+        font-size: 1.1em;
+        font-weight: bold;
+        color: $blue;
+
+        &:focus {
+            outline: none;
+        }
+    }
+
+    button {
+        width: 150px;
+        height: 40px;
+        background: $blue;
+        border-radius: 50px;
+        box-shadow: $shadow-preset;
+        border: none;
+        color: white;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        transition: all .2s ease-out;
+        cursor: pointer;
+
+        &:hover {
+            transform: translateY(2px);
+        }
+
+        &:focus {
+            outline: none;
+        }
+    }
+}
+}

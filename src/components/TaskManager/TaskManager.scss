@@ -1,0 +1,29 @@
+$quick: 'Quicksand',
+sans-serif;
+$shadow-preset: 0px 0px 30px 7px rgba(0, 0, 0, 0.05);
+$blue: #1B408E;
+$violet : #C83D78;
+$black: #3b3c40;
+$cyan: #79bbc1;
+
+.taskManager {
+    box-sizing: border-box;
+    width: 100%;
+    height: 80%;
+    .taskContainer {
+    box-sizing: border-box;
+    background: white;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    box-shadow: $shadow-preset;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+     .tasks {
+
+     }
+}
+}
