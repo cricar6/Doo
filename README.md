@@ -1,5 +1,5 @@
-## Instalación:
-* This is a  achademic project about the management of tasks for group projects
+﻿## Instalación:
+* This is a  academic project about the management of tasks for group projects
 
 ## Uso:
 * npm start
