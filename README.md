@@ -1,8 +1,5 @@
 ## Instalación:
-* Click derecho -> Git Bash Here
-* git clone https://github.com/vagyriag/react-seed.git
-* cd react-seed
-* npm install
+* This is a  achademic project about the management of tasks for group projects
 
 ## Uso:
 * npm start
